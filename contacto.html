@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Contacto
+        </h1>
+    </header>
+    <nav>     
+        <ul>
+            <li><a href="index.html">Pagina Principal</a></li>
+            <li><a href="museos.html">Pagina de Museos</a></li>
+        </ul>
+    </nav>
+    <label for="#">Registro</label>
+    <form action="#" method="POST">
+        <label for="nocumento">Documento</label>
+        <input type="number" id="documento" required>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+        <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fecha-nacimiento" required>
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo">Femenino
+        <input type="radio" name="sexo">Masculino
+        <select name="#" id="#">
+            <option value="manana">Mañana</option><!--disable selected-->
+            <option value="tarde">Tarde</option>
+        </select>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>

@@ -19,15 +19,29 @@
     </nav>
     <label for="#">Registro</label>
     <form action="#" method="POST">
-        <label for="nocumento">Documento</label>
+        <label for="documento">Documento</label>
         <input type="number" id="documento" required>
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" required>
         <label for="fecha-nacimiento">Fecha de Nacimiento</label>
         <input type="date" id="fecha-nacimiento" required>
-        <label for="sexo">Sexo</label>
-        <input type="radio" name="sexo">Femenino
-        <input type="radio" name="sexo">Masculino
+        <label for="sexo" required>Sexo</label>
+        <!--Incorrect use of <label for=FORM_ELEMENT>
+The label's for attribute doesn't match any element id. 
+This might prevent the browser from correctly autofilling 
+the form and accessibility tools from working correctly.
+
+To fix this issue, make sure the label's for attribute references 
+the correct id of a form field.-->
+        <!--faltaba el required-->
+        <label for="#">
+            <input type="radio" name="sexo">Femenino
+        </label>
+        <!--Form elements must have labels: 
+        Element has no title attribute Element has no placeholder attribute-->
+        <label for="#">
+            <input type="radio" name="sexo">Masculino
+        </label>
         <select name="#" id="#">
             <option value="manana">Mañana</option><!--disable selected-->
             <option value="tarde">Tarde</option>

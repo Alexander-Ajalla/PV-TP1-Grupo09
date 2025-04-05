@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--pagina de formulario de lautaro-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>
-            Contacto
-        </h1>
+        <h2>Contacto</h2>
     </header>
     <nav>     
         <ul>
@@ -17,36 +16,57 @@
             <li><a href="museos.html">Pagina de Museos</a></li>
         </ul>
     </nav>
-    <label for="#">Registro</label>
-    <form action="#" method="POST">
-        <label for="documento">Documento</label>
-        <input type="number" id="documento" required>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" required>
-        <label for="fecha-nacimiento">Fecha de Nacimiento</label>
-        <input type="date" id="fecha-nacimiento" required>
-        <label for="sexo" required>Sexo</label>
-        <!--Incorrect use of <label for=FORM_ELEMENT>
-The label's for attribute doesn't match any element id. 
-This might prevent the browser from correctly autofilling 
-the form and accessibility tools from working correctly.
-
-To fix this issue, make sure the label's for attribute references 
-the correct id of a form field.-->
-        <!--faltaba el required-->
-        <label for="#">
-            <input type="radio" name="sexo">Femenino
-        </label>
-        <!--Form elements must have labels: 
-        Element has no title attribute Element has no placeholder attribute-->
-        <label for="#">
-            <input type="radio" name="sexo">Masculino
-        </label>
-        <select name="#" id="#">
-            <option value="manana">Mañana</option><!--disable selected-->
-            <option value="tarde">Tarde</option>
-        </select>
-        <input type="submit" value="Guardar">
-    </form>
+    <main>
+        <form action="#" method="POST">
+            <label for="documento">DNI</label>
+            <input type="number" id="documento" required>
+            <br><br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required>
+            <br><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            <br><br>
+            <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha-nacimiento" required>
+            <br><br>
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" required>
+            <br><br>
+            <label for="celular">Numero de Telefono Celular</label>
+            <input type="number" id="celular" required>
+            <br><br>
+            <label for="sexo" required>Sexo</label>
+            <!--Incorrect use of <label for=FORM_ELEMENT>
+    The label's for attribute doesn't match any element id. 
+    This might prevent the browser from correctly autofilling 
+    the form and accessibility tools from working correctly.
+    
+    To fix this issue, make sure the label's for attribute references 
+    the correct id of a form field.-->
+            <!--faltaba el required-->
+            <label for="#">
+                <input type="radio" name="sexo">Femenino
+            </label>
+            <!--Form elements must have labels: 
+            Element has no title attribute Element has no placeholder attribute-->
+            <label for="#">
+                <input type="radio" name="sexo">Masculino
+            </label>
+            <br><br>
+            <select name="#" id="#">
+                <option value="manana">Mañana</option><!--disable selected-->
+                <option value="tarde">Tarde</option>
+            </select>
+            <br><br>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="text" name="mensaje" rows="4" required></textarea>
+            <br><br>
+            <input type="submit" value="Guardar">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cultura Argentina</p>
+    </footer>
 </body>
 </html>

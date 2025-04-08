@@ -42,6 +42,12 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
+.contenido-principal h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #003366;
+}
 
 .tarjetas-museos {
     display: grid;
@@ -78,4 +84,5 @@ a:hover {
     margin-top: 10px;
     color: #555;
 }
+
 

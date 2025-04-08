@@ -47,6 +47,9 @@ a:hover {
     margin-bottom: 20px;
     text-align: center;
     color: #003366;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .tarjetas-museos {
@@ -78,11 +81,15 @@ a:hover {
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    
 }
 
 .tarjeta p {
     margin-top: 10px;
     color: #555;
 }
+
 
 

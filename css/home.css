@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.main-header {
+    background: linear-gradient(135deg, #9ACBD0 0%, #48A6A7 100%);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 30px;
+}
+
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.logo-container img {
+    max-width: 120px;
+    height: auto;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 3.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav {
+    background-color: #48A6A7;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 400;
+}
+
+.main-nav a:hover {
+    background-color: #006A71;
+    color: #f8f8f8;
+}
+
+.main-content {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+h2 {
+    color: #006A71;
+    border-bottom: 3px solid #006A71;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+article {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.8;
+}
+
+article h3 {
+    color: #48A6A7;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.image-container figcaption.image-caption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 8px;
+}
+
+.author {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.author h3 {
+    color: #48A6A7;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+.main-footer {
+    background-color: #006A71;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* Estilos específicos para la sección de literatura (opcional) */
+.literatura {
+    /* Puedes agregar estilos adicionales si deseas destacar esta sección */
+}

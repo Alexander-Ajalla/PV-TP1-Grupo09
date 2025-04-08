@@ -1,153 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museos de Argentina</title>
-    <!-- Enlace a CSS externo -->
-    <link rel="stylesheet" href="css/museos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museos de Argentina</title>
+  <link rel="stylesheet" href="css/museos.css" />
+  <style>
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-    <!-- Estilos internos -->
-    <style>
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin: 0;
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            list-style: none;
-            background-color: #f0f0f0;
-            padding: 10px;
-            margin: 0;
-        }
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #003366;
+    }
 
-        nav a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #003366;
-        }
+    .tarjetas-museos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
 
-        #lista-museos li {
-            margin-bottom: 30px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            width: 320px;
-            background-color: #fafafa;
-        }
+    .tarjeta {
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 320px;
+      background-color: #fafafa;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        .img-museo {
-            border: 2px solid #003366;
-            width: 300px;
-            height: auto;
-        }
+    .img-museo {
+      border: 2px solid #003366;
+      width: 300px;
+      height: auto;
+    }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            background-color: #003366;
-            color: white;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #003366;
+      color: white;
+    }
+  </style>
 </head>
-<<<<<<< Updated upstream
-<body style="font-family: Arial, sans-serif;">
-    <center>
-        <h1>Museos de Argentina</h1>
-        <h2>Lista de Museos</h2>
-        <ul>
-            <li>
-                <a href="https://www.bellasartes.gob.ar/">Museo Nacional de Bellas Artes</a><br>
-                <img src="https://www.concierto.cl/wp-content/uploads/2018/06/museo_nacional_bellas_artes_mnba_barrio_lastarria_foto_1.jpg" alt="Museo Nacional de Bellas Artes" width="300">
-            </li>
-            <li>
-                <a href="https://www.malba.org.ar/">Museo de Arte Latinoamericano de Buenos Aires (MALBA)</a><br>
-                <img src="https://th.bing.com/th/id/OIP.VHtbxG3-IgoP35avDKld-wHaEK?rs=1&pid=ImgDetMain" alt="Museo de Arte Latinoamericano de Buenos Aires" width="300">
-            </li>
-            <li>
-                <a href="https://museohistoriconacional.cultura.gob.ar/">Museo Histórico Nacional</a><br>
-                <img src="https://th.bing.com/th/id/OIP.a_6pia3t5qdO7FMC-ShV5gHaE7?rs=1&pid=ImgDetMain" alt="Museo Histórico Nacional" width="300">
-            </li>
-            <li>
-                <a href="https://museoevita.org.ar/ ">Museo Evita</a><br>
-                <img src="https://i0.wp.com/zanzemos.com/wp-content/uploads/2019/04/Museu-Evita-Peron.jpg?resize=1024%2C768&ssl=1" alt="Museo Evita" width="300">
-            </li>
-            <li>
-                <a href="https://www.macnconicet.gob.ar/">Museo de Ciencias Naturales Bernardino Rivadavia</a><br>
-                <img src="https://th.bing.com/th/id/OIP.8ZCu-iqkFC4aNzAet3TgVAHaDB?rs=1&pid=ImgDetMain" alt="Museo de Ciencias Naturales Bernardino Rivadavia" width="300">
-            </li>
-            <li>
-                <a href="https://www.casarosada.gob.ar/la-casa-rosada/museo">Museo Casa Rosada</a><br>
-                <img src="https://th.bing.com/th/id/OIP.kQ37e3TWWa9nQhtZ40aA5AHaDt?rs=1&pid=ImgDetMain" alt="Museo Casa Rosada" width="300">
-            </li>
-        </ul>
-    </center>
-    <footer style="text-align: center; padding: 10px; margin-top: 20px;">
-        <p>&copy; 2025 Cultura Argentinaa</p>
-    </footer>
+<body style="font-family: Arial, sans-serif">
+  <header>
+    <h1>Museos de Argentina</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Pagina Principal</a></li>
+      <li><a href="museos.html">Museos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenido-principal">
+    <h2>Lista de Museos</h2>
+    <ul class="tarjetas-museos">
+      <li class="tarjeta">
+        <a href="https://www.bellasartes.gob.ar/">Museo Nacional de Bellas Artes</a><br />
+        <img class="img-museo" src="https://www.concierto.cl/wp-content/uploads/2018/06/museo_nacional_bellas_artes_mnba_barrio_lastarria_foto_1.jpg" alt="Museo Nacional de Bellas Artes" />
+        <p>Ubicado en Buenos Aires, este museo alberga una de las colecciones de arte más importantes de América Latina, con obras de artistas argentinos e internacionales.</p>
+      </li>
+      <li class="tarjeta">
+        <a href="https://www.malba.org.ar/">Museo de Arte Latinoamericano de Buenos Aires (MALBA)</a><br />
+        <img class="img-museo" src="https://th.bing.com/th/id/OIP.VHtbxG3-IgoP35avDKld-wHaEK?rs=1&pid=ImgDetMain" alt="Museo de Arte Latinoamericano de Buenos Aires" />
+        <p>Este museo moderno se especializa en arte latinoamericano del siglo XX y XXI, promoviendo la cultura y la innovación artística en la región.</p>
+      </li>
+      <li class="tarjeta">
+        <a href="https://museohistoriconacional.cultura.gob.ar/">Museo Histórico Nacional</a><br />
+        <img class="img-museo" src="https://th.bing.com/th/id/OIP.a_6pia3t5qdO7FMC-ShV5gHaE7?rs=1&pid=ImgDetMain" alt="Museo Histórico Nacional" />
+        <p>Ubicado en San Telmo, este museo cuenta la historia de Argentina a través de objetos, documentos y vestimentas clave en la construcción del país.</p>
+      </li>
+      <li class="tarjeta">
+        <a href="https://museoevita.org.ar/">Museo Evita</a><br />
+        <img class="img-museo" src="https://i0.wp.com/zanzemos.com/wp-content/uploads/2019/04/Museu-Evita-Peron.jpg?resize=1024%2C768&ssl=1" alt="Museo Evita" />
+        <p>Dedicado a la vida de Eva Perón, muestra su obra social y política mediante objetos personales, audiovisuales y documentos históricos.</p>
+      </li>
+      <li class="tarjeta">
+        <a href="https://www.macnconicet.gob.ar/">Museo de Ciencias Naturales Bernardino Rivadavia</a><br />
+        <img class="img-museo" src="https://th.bing.com/th/id/OIP.8ZCu-iqkFC4aNzAet3TgVAHaDB?rs=1&pid=ImgDetMain" alt="Museo de Ciencias Naturales Bernardino Rivadavia" />
+        <p>Es el principal museo de ciencias naturales del país. Exhibe fósiles, minerales y fauna, destacando su enorme colección paleontológica.</p>
+      </li>
+      <li class="tarjeta">
+        <a href="https://www.casarosada.gob.ar/la-casa-rosada/museo">Museo Casa Rosada</a><br />
+        <img class="img-museo" src="https://th.bing.com/th/id/OIP.kQ37e3TWWa9nQhtZ40aA5AHaDt?rs=1&pid=ImgDetMain" alt="Museo Casa Rosada" />
+        <p>Situado detrás de la sede presidencial, ofrece una mirada a la historia política argentina con objetos de distintos mandatarios y eventos clave.</p>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cultura Argentina</p>
+  </footer>
 </body>
 </html>
-=======
-<body style="font-family: Arial, sans-serif;"> <!-- Estilo inline aplicado -->
-
-    <header>
-        <h1>Museos de Argentina</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="museos.html">Museos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <main class="contenido-principal">
-        <h2>Lista de Museos</h2>
-        <ul class="tarjetas-museos">
-            <li class="tarjeta">
-                <a href="https://www.bellasartes.gob.ar/">Museo Nacional de Bellas Artes</a><br>
-                <img class="img-museo" src="https://www.concierto.cl/wp-content/uploads/2018/06/museo_nacional_bellas_artes_mnba_barrio_lastarria_foto_1.jpg" alt="Museo Nacional de Bellas Artes">
-                <p>Ubicado en Buenos Aires, este museo alberga una de las colecciones de arte más importantes de América Latina, con obras de artistas argentinos e internacionales.</p>
-            </li>
-            <li class="tarjeta">
-                <a href="https://www.malba.org.ar/">Museo de Arte Latinoamericano de Buenos Aires (MALBA)</a><br>
-                <img class="img-museo" src="https://th.bing.com/th/id/OIP.VHtbxG3-IgoP35avDKld-wHaEK?rs=1&pid=ImgDetMain" alt="Museo de Arte Latinoamericano de Buenos Aires">
-                <p>Este museo moderno se especializa en arte latinoamericano del siglo XX y XXI, promoviendo la cultura y la innovación artística en la región.</p>
-            </li>
-            <li class="tarjeta">
-                <a href="https://museohistoriconacional.cultura.gob.ar/">Museo Histórico Nacional</a><br>
-                <img class="img-museo" src="https://th.bing.com/th/id/OIP.a_6pia3t5qdO7FMC-ShV5gHaE7?rs=1&pid=ImgDetMain" alt="Museo Histórico Nacional">
-                <p>Ubicado en San Telmo, este museo cuenta la historia de Argentina a través de objetos, documentos y vestimentas clave en la construcción del país.</p>
-            </li>
-            <li class="tarjeta">
-                <a href="https://museoevita.org.ar/">Museo Evita</a><br>
-                <img class="img-museo" src="https://i0.wp.com/zanzemos.com/wp-content/uploads/2019/04/Museu-Evita-Peron.jpg?resize=1024%2C768&ssl=1" alt="Museo Evita">
-                <p>Dedicado a la vida de Eva Perón, muestra su obra social y política mediante objetos personales, audiovisuales y documentos históricos.</p>
-            </li>
-            <li class="tarjeta">
-                <a href="https://www.macnconicet.gob.ar/">Museo de Ciencias Naturales Bernardino Rivadavia</a><br>
-                <img class="img-museo" src="https://th.bing.com/th/id/OIP.8ZCu-iqkFC4aNzAet3TgVAHaDB?rs=1&pid=ImgDetMain" alt="Museo de Ciencias Naturales Bernardino Rivadavia">
-                <p>Es el principal museo de ciencias naturales del país. Exhibe fósiles, minerales y fauna, destacando su enorme colección paleontológica.</p>
-            </li>
-            <li class="tarjeta">
-                <a href="https://www.casarosada.gob.ar/la-casa-rosada/museo">Museo Casa Rosada</a><br>
-                <img class="img-museo" src="https://th.bing.com/th/id/OIP.kQ37e3TWWa9nQhtZ40aA5AHaDt?rs=1&pid=ImgDetMain" alt="Museo Casa Rosada">
-                <p>Situado detrás de la sede presidencial, ofrece una mirada a la historia política argentina con objetos de distintos mandatarios y eventos clave.</p>
-            </li>
-        </ul>
-    </main>
-    
-
-    <footer>
-        <p>&copy; 2025 Cultura Argentina</p>
-    </footer>
-</body>
-</html>
->>>>>>> Stashed changes

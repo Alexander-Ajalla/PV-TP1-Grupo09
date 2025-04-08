@@ -1,2 +1,2 @@
 # Prog.-Visual---TP1
-"Hola mundo"
+"Este sitio web está dedicado a mostrar la riqueza cultural de Argentina, incluyendo sus museos, arte, historia y tradiciones. Desarrollado con HTML y CSS, combina diseño moderno, efectos visuales y una estructura responsive."

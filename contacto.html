@@ -1,55 +1,72 @@
 <!DOCTYPE html>
+<!--pagina de formulario de lautaro-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Pagina de Contacto</title>
 </head>
 <body>
-    <h2>Contacto</h2>
-
-    <form action="#" method="post">
-        
-        <label for="nombres">Nombres:</label>
-        <input type="text" id="nombres" required>
-        <br><br>
-
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" required>
-        <br><br>
-         
-        <label for="documento">DNI</label>
-        <input type="number" id="documento" required>
-        <br><br>
-
-        <label for="nacimiento">Fecha de Nacimeinto</label>
-        <input type="date" id="nacimiento" required>
-        <br><br>
-
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" required>
-        <br><br>
-
-        <label id="sexo">Genero</label>
-        <input type="radio" name="sexo">Masc
-        <input type="radio" name="sexo">Fem
-        <input type="radio" name="sexo">Otro
-        <br><br>
-
-        <label for="turno">Turno</label>
-        <select id="turno">
-            <option value="mani">Mañana</option>
-            <option value="tar">Tarde</option>    
-        </select>
-        <br><br>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        <br><br>
-
-        <!-- Botón de Enviar -->
-        <input type="submit" value="Guardar">
+    <header>
+        <h2>Contacto</h2>
+    </header>
+    <nav>     
+        <ul>
+            <li><a href="index.html">Pagina Principal</a></li>
+            <li><a href="museos.html">Pagina de Museos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="POST">
+            <label for="documento">DNI</label>
+            <input type="number" id="documento" required>
+            <br><br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required>
+            <br><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            <br><br>
+            <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha-nacimiento" required>
+            <br><br>
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" required>
+            <br><br>
+            <label for="celular">Numero de Telefono Celular</label>
+            <input type="number" id="celular" required>
+            <br><br>
+            <label for="sexo" required>Sexo</label>
+            <!--Incorrect use of <label for=FORM_ELEMENT>
+    The label's for attribute doesn't match any element id. 
+    This might prevent the browser from correctly autofilling 
+    the form and accessibility tools from working correctly.
     
-    </form>
+    To fix this issue, make sure the label's for attribute references 
+    the correct id of a form field.-->
+            <!--faltaba el required-->
+            <label for="#">
+                <input type="radio" name="sexo">Femenino
+            </label>
+            <!--Form elements must have labels: 
+            Element has no title attribute Element has no placeholder attribute-->
+            <label for="#">
+                <input type="radio" name="sexo">Masculino
+            </label>
+            <br><br>
+            <select name="#" id="#">
+                <option value="manana">Mañana</option><!--disable selected-->
+                <option value="tarde">Tarde</option>
+            </select>
+            <br><br>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="text" name="mensaje" rows="4" required></textarea>
+            <br><br>
+            <input type="submit" value="Guardar">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cultura Argentina</p>
+    </footer>
 </body>
 </html>
